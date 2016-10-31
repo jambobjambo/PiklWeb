@@ -9,6 +9,6 @@ resources:
   disk_size_gb: 10
 
 handlers:
-- url: /
-  script: home.app
+- url: /.*
+  script: main.app
 
