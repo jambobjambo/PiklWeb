@@ -1,4 +1,4 @@
-runtime: python27
+runtime: python35
 api_version: 1
 threadsafe: true
 
@@ -6,5 +6,3 @@ handlers:
 - url: /
   script: home.app
 
-skip_files:
--retrained_graph.pb
