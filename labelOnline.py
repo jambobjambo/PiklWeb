@@ -4,7 +4,7 @@ app = Flask(__name__)
 import urllib
 
 @app.route('/')
-def hello():
+def home():
 	urllib.urlretrieve("https://firebasestorage.googleapis.com/v0/b/piklappdev.appspot.com/o/imagestmp%2Fimage3.jpg?alt=media&token=4a5c08b4-8d48-45f8-b9ab-5b49dbb14e51", "image.jpg")
 	# Read in the image_data
 	image_data = tf.gfile.FastGFile('image.jpg', 'rb').read()
