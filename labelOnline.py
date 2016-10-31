@@ -1,7 +1,7 @@
-import tensorflow as tf
+#import tensorflow as tf
 #from flask import Flask
 #app = Flask(__name__)
-import urllib
+#import urllib
 import webapp2
 
 #@app.route('/')
