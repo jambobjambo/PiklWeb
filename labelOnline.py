@@ -40,4 +40,4 @@ class MainPage(webapp2.RequestHandler):
 #    app.run(host='0.0.0.0', port=8080)
 
 app = webapp2.WSGIApplication([
-	('/',MainPage),], debug=true)
+	('/', MainPage),], debug= True)
