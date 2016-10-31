@@ -8,7 +8,9 @@ import webapp2
 
 class MainPage(webapp2.RequestHandler):
 	def get(self):
-		urllib.urlretrieve("https://firebasestorage.googleapis.com/v0/b/piklappdev.appspot.com/o/imagestmp%2Fimage3.jpg?alt=media&token=4a5c08b4-8d48-45f8-b9ab-5b49dbb14e51", "image.jpg")
+		self.response.headers['Content-Type'] = 'text/plain'
+		self.response.write('Hello World!')
+		'''urllib.urlretrieve("https://firebasestorage.googleapis.com/v0/b/piklappdev.appspot.com/o/imagestmp%2Fimage3.jpg?alt=media&token=4a5c08b4-8d48-45f8-b9ab-5b49dbb14e51", "image.jpg")
 		# Read in the image_data
 		image_data = tf.gfile.FastGFile('image.jpg', 'rb').read()
 
@@ -32,7 +34,7 @@ class MainPage(webapp2.RequestHandler):
 		for node_id in top_k:
 			human_string = label_lines[node_id]
 			score = predictions[0][node_id]
-			self.response.write("{ '%s' : { 'score' : '%.5f' } }" % (human_string, score))
+			self.response.write("{ '%s' : { 'score' : '%.5f' } }" % (human_string, score))'''
 
 #if __name__ == "__main__":
 #    app.run(host='0.0.0.0', port=8080)
