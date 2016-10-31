@@ -1,12 +1,9 @@
-runtime: python-compat
+runtime: python
 vm: true
-threadsafe: true
-api_version: 1
+entrypoint: gunicorn -b :$PORT main:app
 
-handlers:
-- url: .*  # This regex directs all routes to main.app
-  script: main.app
-
+runtime_config:
+  python_version: 3
 
 
 
