@@ -2,13 +2,12 @@ runtime: python27
 api_version: 1
 threadsafe: true
 vm: true
+entrypoint: gunicorn -b $PORT main:app
 
 resources:
   cpu: .5
   memory_gb: 1.3
   disk_size_gb: 10
 
-handlers:
-- url: /.*
-  script: main.app
+
 
