@@ -1,5 +1,5 @@
 
-import urllib
+
 import tensorflow as tf
 from flask import Flask
 
