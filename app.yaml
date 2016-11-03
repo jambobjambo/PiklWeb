@@ -1,7 +1,8 @@
-runtime: python35
+runtime: python
 vm: true
 entrypoint: gunicorn -b :$PORT labelOnline:app
 
-
+runtime_config:
+  python_version: 3
 
 
