@@ -18,7 +18,7 @@ def hello():
 
 		with tf.Session() as sess:
 			softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
-   			predictions = sess.run(softmax_tensor, \
+			predictions = sess.run(softmax_tensor, \
    				{'DecodeJpeg/contents:0': image_data})
 
    		top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
