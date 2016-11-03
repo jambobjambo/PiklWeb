@@ -1,4 +1,4 @@
-runtime: python-3.4.3
+runtime: python34
 vm: true
 entrypoint: gunicorn -b :$PORT labelOnline:app
 
